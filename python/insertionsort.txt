@@ -1,0 +1,8 @@
+def insertionsort(l):
+    for i in range(len(l)):
+        x=i
+        while x>0 and l[x]>l[x-1]:
+            (l[x],l[x-1])=(l[x-1],l[x])
+            x=x-1
+    return l
+print(insertionsort([2,4,1,6,9,4,8,20,3]))

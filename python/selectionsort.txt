@@ -1,0 +1,10 @@
+def selectionsort(l):
+    for i in range(0,len(l)):
+        x=i
+        for j in range(i,len(l)):
+            if l[j]>l[x]:
+                x=j
+        (l[i],l[x])=(l[x],l[i])
+    return l
+print([3,6,1,9,4,2,7,10,5])
+print(selectionsort([3,6,1,9,4,2,7,10,5]))
